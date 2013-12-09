@@ -16,6 +16,28 @@ Shows a culture's name for a given month.
 </template>
 
 <script>
+// Static members
+// TODO: Once Polymer supports constructor access here, use that instead.
+QuetzalMonthName = {
+
+  // Default names, used if Globalize is not avaialble.
+  names: [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ]
+
+};
+
 Polymer( "quetzal-month-name", {
   
   applyAuthorStyles: true,
@@ -42,28 +64,6 @@ Polymer( "quetzal-month-name", {
   }
 
 });
-
-// Static members
-// TODO: Once Polymer supports constructor access here, use that instead.
-QuetzalMonthName = {
-
-  // Default names, used if Globalize is not avaialble.
-  names: [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ]
-
-};
 </script>
 
 </polymer-element>
